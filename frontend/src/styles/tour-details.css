@@ -1,0 +1,344 @@
+.tour__content {
+   position: relative;
+   overflow: hidden;
+   border-radius: 1rem;
+   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+   background: #fff;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tour__content:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.tour__content img {
+   width: 100%;
+   height: 600px;
+   object-fit: cover;
+   border-radius: 1rem 1rem 0 0;
+   margin-bottom: 0;
+   transition: transform 0.5s ease;
+   filter: brightness(0.95);
+}
+
+.tour__content img:hover {
+   transform: scale(1.03);
+   filter: brightness(1);
+}
+
+.tour__info,
+.tour__reviews {
+   border-radius: 1rem;
+   border: none;
+   padding: 2.5rem;
+   background: #fff;
+   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+   margin-bottom: 2.5rem;
+   transition: transform 0.3s ease;
+}
+
+.tour__info:hover,
+.tour__reviews:hover {
+   transform: translateY(-3px);
+}
+
+.tour__info h2 {
+   font-size: 2.5rem;
+   color: var(--heading-color);
+   margin-bottom: 1.5rem;
+   font-weight: 700;
+   letter-spacing: -0.5px;
+}
+
+.tour__info span {
+   display: flex;
+   align-items: center;
+   column-gap: 0.8rem;
+   font-size: 1.1rem;
+   color: var(--text-color);
+   margin-bottom: 0.8rem;
+   transition: color 0.3s ease;
+}
+
+.tour__info span:hover {
+   color: var(--secondary-color);
+}
+
+.tour__info span i {
+   color: var(--secondary-color);
+   font-size: 1.4rem;
+}
+
+.tour__extra-details {
+   display: flex;
+   align-items: center;
+   column-gap: 3rem;
+   margin-top: 2rem;
+   margin-bottom: 3rem;
+   padding: 1.5rem;
+   background: #f8f9fa;
+   border-radius: 1rem;
+   transition: transform 0.3s ease;
+}
+
+.tour__extra-details:hover {
+   transform: translateX(5px);
+   background: #f3f4f6;
+}
+
+.tour__info h5 {
+   margin-bottom: 1.5rem;
+   font-size: 1.8rem;
+   color: var(--heading-color);
+   font-weight: 700;
+   letter-spacing: -0.5px;
+}
+
+.tour__info p {
+   line-height: 1.9;
+   font-size: 1.15rem;
+   color: var(--text-color);
+   margin-bottom: 2rem;
+}
+
+.tour__reviews h4 {
+   margin-bottom: 2.5rem;
+   font-size: 2rem;
+   color: var(--heading-color);
+   font-weight: 700;
+   letter-spacing: -0.5px;
+}
+
+.rating__group {
+   display: flex;
+   align-items: center;
+   gap: 1.2rem;
+   margin-bottom: 2.5rem;
+   flex-wrap: wrap;
+}
+
+.rating__group span {
+   font-size: 1.2rem;
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   color: var(--secondary-color);
+   cursor: pointer;
+   padding: 0.8rem 1.5rem;
+   border-radius: 2rem;
+   background: #f8f9fa;
+   transition: all 0.3s ease;
+   border: 1px solid transparent;
+}
+
+.rating__group span:hover {
+   background: var(--secondary-color);
+   color: #fff;
+   transform: translateY(-2px);
+}
+
+.review__input {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   padding: 1rem 1.5rem;
+   border-radius: 3rem;
+   border: 2px solid #e0e0e0;
+   background: #fff;
+   margin-bottom: 2.5rem;
+   transition: all 0.3s ease;
+}
+
+.review__input:focus-within {
+   border-color: var(--secondary-color);
+   box-shadow: 0 0 0 4px rgba(var(--secondary-color-rgb), 0.1);
+}
+
+.review__input input {
+   width: 100%;
+   padding: 0.5rem 1rem;
+   border: none;
+   outline: none;
+   font-size: 1.1rem;
+   color: var(--heading-color);
+}
+
+.review__input input::placeholder {
+   color: #999;
+}
+
+.user__reviews {
+   margin-top: 3rem;
+   display: grid;
+   gap: 2rem;
+}
+
+.review__item {
+   display: flex;
+   align-items: flex-start;
+   gap: 2rem;
+   padding: 2rem;
+   background: #f8f9fa;
+   border-radius: 1rem;
+   transition: all 0.3s ease;
+}
+
+.review__item:hover {
+   transform: translateY(-5px);
+   background: #fff;
+   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.review__item img {
+   width: 5rem;
+   height: 5rem;
+   border-radius: 50%;
+   object-fit: cover;
+   border: 3px solid #fff;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.review__item h5 {
+   font-size: 1.2rem;
+   color: var(--heading-color);
+   margin-bottom: 0.5rem;
+   font-weight: 600;
+}
+
+.review__item p {
+   font-size: 0.95rem;
+   color: #666;
+   margin-bottom: 0.8rem;
+}
+
+.review__item h6 {
+   font-size: 1.1rem;
+   color: var(--text-color);
+   line-height: 1.7;
+}
+
+/* Booking Section Styles */
+.booking {
+   background: #fff;
+   padding: 2.5rem;
+   border-radius: 1rem;
+   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+   position: sticky;
+   top: 2rem;
+   transition: transform 0.3s ease;
+}
+
+.booking:hover {
+   transform: translateY(-5px);
+}
+
+.booking__top {
+   padding-bottom: 2rem;
+   border-bottom: 2px solid #f0f0f0;
+   margin-bottom: 2rem;
+}
+
+.booking__top h3 {
+   font-size: 2.2rem;
+   color: var(--heading-color);
+   font-weight: 700;
+   margin-bottom: 0.5rem;
+}
+
+.booking__top h3 span {
+   font-size: 1.1rem;
+   color: #666;
+   font-weight: 500;
+}
+
+.booking__form h5 {
+   font-size: 1.4rem;
+   color: var(--heading-color);
+   margin-bottom: 2rem;
+   font-weight: 600;
+}
+
+.booking__info-form input {
+   width: 100%;
+   padding: 1rem;
+   border: 2px solid #e0e0e0;
+   border-radius: 0.8rem;
+   margin-bottom: 1.5rem;
+   font-size: 1.1rem;
+   transition: all 0.3s ease;
+}
+
+.booking__info-form input:focus {
+   outline: none;
+   border-color: var(--secondary-color);
+   box-shadow: 0 0 0 4px rgba(var(--secondary-color-rgb), 0.1);
+}
+
+.booking__info-form input::placeholder {
+   color: #999;
+}
+
+@media only screen and (max-width: 992px) {
+   .tour__content img {
+      height: 450px;
+   }
+
+   .booking {
+      position: relative;
+      top: 0;
+      margin-top: 3rem;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+   .tour__content img {
+      height: 350px;
+   }
+
+   .tour__extra-details {
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 1rem;
+   }
+
+   .tour__info,
+   .tour__reviews {
+      padding: 1.5rem;
+   }
+
+   .review__item {
+      padding: 1.5rem;
+      gap: 1.5rem;
+   }
+
+   .review__item img {
+      width: 4rem;
+      height: 4rem;
+   }
+
+   .booking {
+      padding: 1.5rem;
+   }
+}
+
+@media only screen and (max-width: 576px) {
+   .tour__info h2 {
+      font-size: 1.8rem;
+   }
+
+   .tour__extra-details {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+
+   .rating__group {
+      gap: 0.8rem;
+   }
+
+   .rating__group span {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+   }
+}  
